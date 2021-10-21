@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let number = +prompt("Nhập phần tử cần đếm ")
+
+    function demPhanTu(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === number) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    let soLuong = demPhanTu(arr);
+    alert("Số lượng phần tử " + number + " có trong mảng là :" + soLuong);
+</script>
+</body>
+</html>

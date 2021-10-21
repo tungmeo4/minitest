@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let cnt = 0
+    demSo()
+    function demSo() {
+        for (let i = 0; i < arr.length; i++) {
+            if (i % 2 == 0) {
+                cnt += 1
+            }
+        }
+    }
+    document.write('Có ' + cnt + ' số chẵn')
+</script>
+</body>
+</html>
